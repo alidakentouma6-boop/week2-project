@@ -1,0 +1,13 @@
+:root { --dark: #14213d; --accent: #d9692b; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--dark);
+}
+header a { color: #fff; text-decoration: none; }
+nav { display: flex; gap: 24px; }
