@@ -18,22 +18,27 @@
 
   <main>
     <h1>Join the club</h1>
-    <form action="#" method="post">
+        <form id="signup-form" action="#" method="post" novalidate>
       <label for="name">Full name</label>
-      <input id="name" name="name" type="text" required>
+      <input id="name" name="name" type="text">
+      <p class="error" id="name-error"></p>
 
       <label for="email">Email</label>
-      <input id="email" name="email" type="email" required>
+      <input id="email" name="email" type="email">
+      <p class="error" id="email-error"></p>
 
-      <label for="seats">Seats</label>
-      <input id="seats" name="seats" type="number" min="1" max="5">
+      <label for="seats">Seats (1 to 5)</label>
+      <input id="seats" name="seats" type="number">
+      <p class="error" id="seats-error"></p>
 
       <button type="submit">Register</button>
+      <p id="success"></p>
     </form>
   </main>
 
   <footer>
     <p>© 2026 Your Name · contact@example.com</p>
   </footer>
+    <script src="app.js"></script>
 </body>
 </html>
