@@ -12,3 +12,7 @@ MIS 457 · Web Based Application Programming · Fall 2026
 - Responsive at 375px (1 column) and 1280px (3 columns)
 - Lighthouse Accessibility: 100 (home), 100 (sign-up)
 - Screenshots: `lighthouse-index.png`, `lighthouse-signup.png`
+## Week 3: JavaScript and the DOM
+- `app.js` is linked from both pages
+- Validation: the sign-up form shows clear error messages (name, email, seats)
+- Dynamic list: the event cards on `index.html` are made from a JavaScript array
