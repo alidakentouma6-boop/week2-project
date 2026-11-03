@@ -45,3 +45,35 @@ if (form) {
     }
   });
 }
+const events = [
+  { id: 1, title: "Coding Night", description: "Build small projects together." },
+  { id: 2, title: "Web Workshop", description: "HTML, CSS and JavaScript basics." },
+  { id: 3, title: "Hack Day", description: "Team up and solve a challenge." },
+  { id: 4, title: "Career Talk", description: "Meet developers from local companies." },
+  { id: 5, title: "Game Jam", description: "Make a small game in one weekend." },
+  { id: 6, title: "Demo Day", description: "Show what you built this semester." },
+  
+];
+
+
+const eventList = document.querySelector("#event-list");
+
+function renderEvents() {
+  eventList.innerHTML = "";
+  for (const event of events) {
+    const article = document.createElement("article");
+
+    const heading = document.createElement("h2");
+    heading.textContent = event.title;
+
+    const text = document.createElement("p");
+    text.textContent = event.description;
+
+    article.append(heading, text);
+    eventList.append(article);
+  }
+}
+
+if (eventList) {
+  renderEvents();
+}
